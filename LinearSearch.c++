@@ -11,7 +11,7 @@ int main(){
     }int x;
     cout<<"Enter the u element you want search";
     cin>>x;
-    for(int i=0;i<n;i++){}
+    for(int i=0;i<n;i++){
         if(arr[i]==x){
             cout<<x<<" is presnt";
         }
