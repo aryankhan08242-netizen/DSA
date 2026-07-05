@@ -18,4 +18,3 @@ int main(){
     
    }
    cout<<"Your Maximum number = "<<max;
-}
