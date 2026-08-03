@@ -1,32 +1,24 @@
-#include<iostream>
+#include <iostream>
+#include <vector>
 using namespace std;
-int getmax(int Arr[],int size){
-    int max= Arr[0];
-    for(int i=0; i<size;i++){
-        if(max<Arr[i]){
-            max=Arr[i];
+int main()
+{
+    vector<int> num(10);
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> num[i];
+        cout<<endl;
+    }
+   
+    int target = 6;
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            if ( num[i] + num[j] == target)
+            {
+            cout<<"["<<i<<","<<j<<"]"<<endl;
+            }
         }
     }
-    return max;
-}
-int getmin(int Arr[],int size){
-    int min= Arr[0];
-    for(int i=0; i<size;i++){
-        if(min>Arr[i]){
-            min=Arr[i];
-        }
-    }
-    return min;
-}
-int main(){
-    int n;
-    cout<<"Enter the size of array :"<<endl;
-    cin>>n;
-    int arr[n];
-  
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    cout<<"As I see in ur array maximum number is :"<<getmax(arr,n)<<endl;
-    cout<<"As I see in ur array minimum number is :"<<getmin(arr,n)<<endl;
 }
