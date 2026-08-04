@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
 int main(){
+    int n,m;
+    cout<<"Enter the number of Rows"<<endl;
+    cin>>n;
+    cout<<endl;
+    cout<<"Enter Number of Columns"<<endl;
+    cin>>m;
     int arr[3][4];
     cout<<"Enter the Element Of Array";
     for(int i=0;i<3;i++){
