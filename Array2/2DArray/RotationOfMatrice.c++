@@ -1,8 +1,15 @@
 #include<iostream>
-#include<vector>
+#include<string>
+#include<algorithm>
 using namespace std;
-void Rotation(vector<vector<int> &matrix,)
-
 int main(){
-
+string s="anwar";
+string t="waran";
+sort(s.begin(),s.end());
+sort(t.begin(),t.end());
+if(s==t){
+    cout<<"True";
+}
+else
+cout<<"false";
 }
