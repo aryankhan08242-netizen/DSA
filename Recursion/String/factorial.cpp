@@ -9,6 +9,6 @@ int main(){
         n=n/10;
         digit++;
     }
-    cout<<"Nu,ber of ditit "<<digit;
+    cout<<"Number of digit "<<digit;
 
 
