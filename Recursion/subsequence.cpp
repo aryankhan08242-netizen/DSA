@@ -1,10 +1,22 @@
 #include<iostream>
+#include<vector>
 using namespace std;
-int subsequence(int i, int arr, int n){
+int subsequence(int i, vector<int>&arr, int n){
     if(i>=n){
-    cout<<arr;
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
     return ;
     }
-    arr[i].add(arr[i]);
+    arr.push_back(arr[i]);
+    subsequence(i++,arr[i]);
+    arr.pop_back(arr[i]);
+
+
+}
+int main(){
+vector<int>arr={3,1,2};
+int n=3;
+subsequence(0,arr,n);
 
 }
