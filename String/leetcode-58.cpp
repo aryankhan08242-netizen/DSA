@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     int count=0;
-    string str="hello world";
+    string str="anwar is great ";
     int l=str.length();
 while(l>=0 && str[l]==0){
     l--;
