@@ -17,7 +17,7 @@ using namespace std; int main(){
         swap(arr[i],arr[mindex]);
 
     }
-    for(int i=0; i<8;i++){
+    for(int i=0; i<7;i++){
         cout<<arr[i]<<" ";
     }
 }
