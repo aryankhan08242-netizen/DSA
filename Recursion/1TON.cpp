@@ -1,15 +1,17 @@
 #include<iostream>
 using namespace std;
-void number(int x){
-    if(x==0){
+void print(int i,int x){
+    
+    if(i>x){
         return;
     }
-    cout<<x<<endl;
-    number(x-1);
+    cout<<i<<endl;
+    print(++i,x);
+    
 }
 int main(){
     int n;
-    cout<<"Enter the value of n";
+    cout<<"Enter the number";
     cin>>n;
-    number(n);
+    print(1,n);
 }
