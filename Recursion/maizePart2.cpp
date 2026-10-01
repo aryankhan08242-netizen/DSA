@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int maiz(int row, int col){
+    if(row<1 || col<1){
+        return 0;
+    }
+    if(row==1 && col==1){
+
+        return 1;
+    }
+    int right=maiz(row,col-1);
+    int down=maiz(row-1,col);
+    return right+down;
+}
+int main(){
+    cout<<maiz(4,4);
+}
