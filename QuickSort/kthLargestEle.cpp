@@ -36,7 +36,7 @@ int quickSort(int arr[], int si, int ei, int k)
     int PivotIndx = Partition(arr, si, ei);
     if (PivotIndx + 1 == k)
     {
-        cout << arr[PivotIndx];
+        return arr[PivotIndx];
     }
     else if (PivotIndx + 1 < k)
         {
